@@ -54,7 +54,7 @@ public class Proxy extends Plugin implements Listener {
                 TextComponent json = new TextComponent("");
                 json = new TextComponent("§d"+server.getInfo().getName()+ " §eUHC Game on §d"+server.getInfo().getName() + " §estarts in §d§l"+ s + "§7[§eClick to join!§7]");
                 json.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/server "+server.getInfo().getName()));
-                json.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, (new ComponentBuilder("§7[§ee§lJoin!§7]")).create()));
+                json.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, (new ComponentBuilder("§7[§e§lJoin!§7]")).create()));
                 ala.addExtra((BaseComponent) json);
                 getProxy().getPlayers().forEach(proxiedPlayer -> proxiedPlayer.sendMessage((BaseComponent) ala));
             }
